@@ -1,5 +1,9 @@
 # Smarttomcat - web - 50 pts - created by xel/grimmlin
 
+***
+
+*Cette épreuve n'a pas été réalisée pendant la durée du CTF, mais ayant été bloqué sur un détail (l'authentification), il est intéressant de savoir comment il a pu être validé.*
+
 ## Désignation
 
     Normal, regular cats are so 2000 and late, I decided to buy this allegedly smart tomcat robot
@@ -12,7 +16,7 @@ Donc c'est parti, on clic sur `Search interface` et on atterrit sur cette page :
 
 ![Smarttomcat](smarttomcat.png)
 
-Essayons de comprendre le fonctionnemet .  
+Essayons de comprendre le fonctionnement .  
 
 Nous avons deux champs en haut à droite qui correspondent à des coordonnées à entrer . En gros, on rentre des coordonnées GPS et on retrouve notre chat killer d'humains . On essaye n'importe quoi pour tester (12.5 et 4.8 par exemple) et on a un message qui nous dit que notre chat n'est pas à cet endroit .  
 Il est temps de regarder la source !  
@@ -52,7 +56,7 @@ On essaye donc le post suivant :
     u=http://localhost:8080/manager/html
 
 Une erreur nous est renvoyée. En effet, le serveur demande une authentification HTTP .  
-On essaye donc une authentification simple
+Voici donc l'authentification qu'il fallait rentrer:
 
     u=http://tomcat:tomcat@localhost:8080/manager/html
 

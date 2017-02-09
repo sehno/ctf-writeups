@@ -88,7 +88,7 @@ En utilisant le filtre `smtp`, on obtient bien un mail !
 
 ![TheGreatEscape_mail](TheGreatEscape_mail.png)
 
-Nottons que ce mail utilise l'addresse ip suivante : `52.214.142.175` .
+Notons que ce mail utilise l'addresse ip suivante : `52.214.142.175` .
 
 Nous pouvons maintenant ajouter notre clef privée dans Wireshark en faisant `Edit` puis `Preferences` puis `Protocols` puis `SSL` .  
 Il faut ensuite ajouter notre clef RSA en mettant donc l'addresse ip `52.214.142.175` puis port `443` (port par défaut pour du https), puis Protocol `http`, et on finit avec key file où on va chercher le fichier contenant la clef RSA .  
